@@ -1,0 +1,29 @@
+You are an expert software engineer.
+
+Goal:
+Create a production-grade .gitignore file for a repository named "insightforge-decisionlens".
+
+Project stack:
+- Python (virtualenv, pip, compiled files)
+- Docker / Docker Compose
+- SQL Server (local dev artifacts only)
+- Power BI (PBIX files should be tracked, temp/cache should not)
+- Web app (Node/JS frontend + API backend)
+- VS Code
+- OS-specific artifacts (Windows, macOS, Linux)
+- Secrets handled via .env files
+
+Rules:
+- Track Power BI .pbix files (do NOT ignore them)
+- Ignore secrets (.env, but NOT .env.example)
+- Ignore build artifacts, caches, logs, node_modules, dist, coverage
+- Ignore Python venvs and compiled files
+- Ignore Docker local artifacts but keep docker-compose.yml
+- Ignore SQL Server local data files (.mdf, .ldf, .bak)
+- Ignore VS Code workspace junk but allow recommended settings
+- Keep the file readable and commented
+- Do NOT add unnecessary ignores
+- Do NOT include explanations outside the file
+- Output ONLY the .gitignore content
+
+Structure the .gitignore with clear commented sections.
